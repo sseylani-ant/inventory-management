@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +107,8 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    days: 'days',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -125,7 +128,8 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Lead Time'
     }
   },
 
@@ -188,6 +192,40 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan and submit restocking orders based on demand forecasts',
+    budgetLabel: 'Available Budget',
+    recommendationsTitle: 'Recommended Restocks',
+    noRecommendations: 'No items fit within this budget. Increase the budget to see recommendations.',
+    placeOrder: 'Place Order',
+    placing: 'Placing Order...',
+    orderSuccess: 'Order {orderNumber} placed — delivery in {days} days',
+    viewOrders: 'View in Orders',
+    loadError: 'Failed to load recommendations',
+    placeError: 'Failed to place order',
+    table: {
+      rank: '#',
+      sku: 'SKU',
+      item: 'Item',
+      trend: 'Trend',
+      currentDemand: 'Current Demand',
+      forecastedDemand: 'Forecasted Demand',
+      gap: 'Demand Gap',
+      quantity: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      estimatedCost: 'Est. Cost',
+      leadTime: 'Lead Time'
+    },
+    summary: {
+      budget: 'Budget',
+      plannedSpend: 'Planned Spend',
+      remaining: 'Remaining',
+      itemsSelected: 'Items to Restock'
+    }
+  },
+
   // Filters
   filters: {
     timePeriod: 'Time Period',
@@ -204,6 +242,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
